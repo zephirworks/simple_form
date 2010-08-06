@@ -33,6 +33,9 @@ module SimpleForm
   mattr_accessor :wrapper_tag
   @@wrapper_tag = nil
 
+  mattr_accessor :wrapper_errors_class
+  @@wrapper_errors_class = :field_with_errors
+  
   # How the label text should be generated altogether with the required text.
   mattr_accessor :label_text
   @@label_text = lambda { |label, required| "#{required} #{label}" }
